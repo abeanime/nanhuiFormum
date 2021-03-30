@@ -1,0 +1,86 @@
+.red{
+    color:#e71616
+}
+
+.title{
+    color:mint;
+    font-size: 38px;
+    font-family: "STLibianSC-Regular";
+    font-weight: bold;
+    text-align: center;
+}
+
+.foot{
+    color:navy;
+    font-size: 15px;
+    font-family: "STKaiti";
+    text-align: left;
+}
+
+
+
+<div class="box">
+        <p>向上箭头</p>
+        <div class="to_top"></div>
+        <p>向左箭头</p>
+        <div class="to_left"></div>
+        <p>向右箭头</p>
+        <div class="to_right"></div>
+        <p>向下箭头</p>
+        <div class="to_bottom"></div>
+</div>
+
+.box {
+    width: 400px;
+    height: 100px;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.box p {
+    background: pink;
+}
+
+/* 向上箭头 */
+
+.to_top {
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid #f0f;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+}
+
+/* 向左箭头 */
+
+.to_left {
+    width: 0;
+    height: 0;
+    border-right: 5px solid #ffd900;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+
+/* 向右箭头 */
+
+.to_right {
+    width: 0;
+    height: 0;
+    border-left: 5px solid greenyellow;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+
+/* 向下箭头 */
+
+.to_bottom {
+    width: 0;
+    height: 0;
+    border-top: 5px solid skyblue;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+
+.equation {
+    font-size: 10px;
+}

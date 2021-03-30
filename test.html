@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>.title[创新行为提高了中国新生企业的生存率吗？]</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="张沐" />
+    <meta name="date" content="2021-03-30" />
+    <script src="libs/header-attrs-2.7/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/metropolis.css" rel="stylesheet" />
+    <script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+    <script src="libs/jquery-3.5.1/jquery.min.js"></script>
+    <script src="libs/proj4js-2.3.15/proj4.js"></script>
+    <link href="libs/highcharts-8.1.2/css/motion.css" rel="stylesheet" />
+    <script src="libs/highcharts-8.1.2/highcharts.js"></script>
+    <script src="libs/highcharts-8.1.2/highcharts-3d.js"></script>
+    <script src="libs/highcharts-8.1.2/highcharts-more.js"></script>
+    <script src="libs/highcharts-8.1.2/modules/stock.js"></script>
+    <script src="libs/highcharts-8.1.2/modules/map.js"></script>
+    <script src="libs/highcharts-8.1.2/modules/annotations.js"></script>
+    <script src="libs/highcharts-8.1.2/modules/data.js"></script>
+    <script src="libs/highcharts-8.1.2/modules/drilldown.js"></script>
+    <script src="libs/highcharts-8.1.2/modules/item-series.js"></script>
+    <script src="libs/highcharts-8.1.2/modules/offline-exporting.js"></script>
+    <script src="libs/highcharts-8.1.2/modules/overlapping-datalabels.js"></script>
+    <script src="libs/highcharts-8.1.2/modules/exporting.js"></script>
+    <script src="libs/highcharts-8.1.2/modules/export-data.js"></script>
+    <script src="libs/highcharts-8.1.2/modules/funnel.js"></script>
+    <script src="libs/highcharts-8.1.2/modules/heatmap.js"></script>
+    <script src="libs/highcharts-8.1.2/modules/treemap.js"></script>
+    <script src="libs/highcharts-8.1.2/modules/sankey.js"></script>
+    <script src="libs/highcharts-8.1.2/modules/dependency-wheel.js"></script>
+    <script src="libs/highcharts-8.1.2/modules/organization.js"></script>
+    <script src="libs/highcharts-8.1.2/modules/solid-gauge.js"></script>
+    <script src="libs/highcharts-8.1.2/modules/streamgraph.js"></script>
+    <script src="libs/highcharts-8.1.2/modules/sunburst.js"></script>
+    <script src="libs/highcharts-8.1.2/modules/vector.js"></script>
+    <script src="libs/highcharts-8.1.2/modules/wordcloud.js"></script>
+    <script src="libs/highcharts-8.1.2/modules/xrange.js"></script>
+    <script src="libs/highcharts-8.1.2/modules/tilemap.js"></script>
+    <script src="libs/highcharts-8.1.2/modules/venn.js"></script>
+    <script src="libs/highcharts-8.1.2/modules/gantt.js"></script>
+    <script src="libs/highcharts-8.1.2/modules/timeline.js"></script>
+    <script src="libs/highcharts-8.1.2/modules/parallel-coordinates.js"></script>
+    <script src="libs/highcharts-8.1.2/modules/bullet.js"></script>
+    <script src="libs/highcharts-8.1.2/modules/coloraxis.js"></script>
+    <script src="libs/highcharts-8.1.2/modules/dumbbell.js"></script>
+    <script src="libs/highcharts-8.1.2/modules/lollipop.js"></script>
+    <script src="libs/highcharts-8.1.2/modules/series-label.js"></script>
+    <script src="libs/highcharts-8.1.2/plugins/motion.js"></script>
+    <script src="libs/highcharts-8.1.2/custom/reset.js"></script>
+    <script src="libs/highcharts-8.1.2/modules/boost.js"></script>
+    <script src="libs/highchart-binding-0.8.2/highchart.js"></script>
+    <link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+    <script src="libs/datatables-binding-0.17/datatables.js"></script>
+    <link href="libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
+    <script src="libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
+    <link href="libs/nouislider-7.0.10/jquery.nouislider.min.css" rel="stylesheet" />
+    <script src="libs/nouislider-7.0.10/jquery.nouislider.min.js"></script>
+    <link href="libs/selectize-0.12.0/selectize.bootstrap3.css" rel="stylesheet" />
+    <script src="libs/selectize-0.12.0/selectize.min.js"></script>
+    <link href="libs/crosstalk-1.1.1/css/crosstalk.css" rel="stylesheet" />
+    <script src="libs/crosstalk-1.1.1/js/crosstalk.min.js"></script>
+    <link rel="stylesheet" href="red.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# .title[创新行为提高了中国新生企业的生存率吗？]
+### 张沐
+### <br> 华中师范大学<br>经济与工商管理学院
+### <br>2021-03-30
+
+---
+
+
+
+
+
+
+# 1、本文摘要
+
+  本文基于1998-2007年的中国工业企业数据库以及对应年份的中国专利数据库，按照组织机构代码进行匹配，构造一个既包含企业基本财务、生存情况，又包含企业创新行为的微观面板数据，并借用生存分析中，可捕捉未观测个体异质性的离散时间风险模型——互补重对数            `\(Clog-clog\)` 模型，从三种不同类型的创新行为分析了创新与企业生存率间的关系。
+
+--
+
+.content-box-army[本文的发现如下]：
+
+--
+
+
+- 根据KM生存曲线的估计结果：
+  1. 较之于完全没有创新行为的企业，任意一种创新行为均可显著降低企业的死亡率；
+  2. 三类不同的创新行为对企业生存率的影响随时间的变化趋势不尽相同；
+
+--
+
+- 根据基准回归和近一步分析的回归结果：
+  1. 首先是验证了KM曲线所反映的规律；
+  2. 其次发现了创新行为和企业生存率之间的存在非线性关系。
+
+--
+
+- 虽然基准回归和拓展性分析存在一定的内生性问题，但是根据内生性检验的结果发现，内生性程度在可接受范围之内，本文的结论研究可算是稳健的。
+
+
+---
+
+# 2、数据说明
+
+
+<div id="htmlwidget-0c83b9cf01283b2d2294" style="width:100%;height:500px;" class="highchart html-widget"></div>
+<script type="application/json" data-for="htmlwidget-0c83b9cf01283b2d2294">{"x":{"hc_opts":{"chart":{"reflow":true,"type":"timeline","style":{"fontFamily":"STSongti-SC-Regular"}},"title":{"text":null},"yAxis":{"title":{"text":null},"visible":false},"credits":{"enabled":false},"exporting":{"enabled":false},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"}},"xAxis":{"visible":false},"colors":["#4185F3","#427CDD","#406AB2","#3E5A8E","#3B4A68"],"series":[{"data":[{"name":"第一步：数据整理","description":"工企数据中缺失值和不合理值的处理，以全部从业人员年平均人数人为例。"},{"name":"第二步：数据匹配","description":"以组织机构代码作为键位进行匹配。"},{"name":"第三步：企业生存状况","description":"无论国企还是非国企，将企业第一次出现在数据库中的时间定义为企业新生当年。"},{"name":"第四步：企业死亡状况","description":"对于国企，定义其出现在数据库中的最后一年为死亡当年；<br>对于非国企，只有其最后一年的营业状态非“正常营业”或“筹建”才被定义为当年死亡。"},{"name":"第五步：KM曲线对比","description":"以国企与非国企、创新企业与非创新企业以及三类创新行为有无作为分类依据，进行KM曲线的对比。"}]}]},"theme":{"chart":{"backgroundColor":"transparent"},"colors":["#7cb5ec","#434348","#90ed7d","#f7a35c","#8085e9","#f15c80","#e4d354","#2b908f","#f45b5b","#91e8e1"]},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"STSongti-SC-Regular","debug":false},"evals":[],"jsHooks":[]}</script>
+
+
+
+
+---
+
+# 2.1、数据整理
+
+以工企中的 `全部从业人员年平均人数人` 为例。首先处理不合理的极大值，若该企业只存在一期，则删去该行观测值；若存在多期，则替换为缺失值，随后处理。当数据存在&lt;span style='color:navy'&gt;缺失&lt;/span&gt;、&lt;span style='color:navy'&gt;负数&lt;/span&gt;或&lt;span style='color:navy'&gt;为零&lt;/span&gt;情况时，均需要进行填补。
+
+处理顺序：缺失值 &amp;rArr; 负数 &amp;rArr; 零值；处理原则：先补再删。
+
+
+--
+
+①   缺失值的处理
+
+使用线性插值法对缺失值进行填补，填补之后依然缺失的删去。并且，此时会产生缺失值变成 0 或负数的情况。
+
+②   负数的处理
+
+由于线性插值的特点，很容易导致个体在期初或期末的值被填为负数。因此，期初、期末的负值，使用最近一期的非负值进行填补。
+
+③   零值的处理
+
+将 0 转为缺失值，重复以上两步。即迭代使用`ipolate`，直到这三类值的总数前后两次相等。
+
+--
+
+.foot[[注：在本文的处理中，最后删去的样本量为18201，较之于简单删去79230个缺失值，样本损失要小得多。]]
+
+
+
+---
+
+# 2.2、数据匹配
+
+
+<div id="htmlwidget-282e1f826b7ca8bec5c7" style="width:100%;height:500px;" class="highchart html-widget"></div>
+<script type="application/json" data-for="htmlwidget-282e1f826b7ca8bec5c7">{"x":{"hc_opts":{"chart":{"reflow":true,"spacingBottom":40,"spacingTop":60,"spacingLeft":40,"spacingRight":60,"style":{"fontFamily":"STSongti-SC-Regular"}},"title":{"text":"工业企业数据库与中国专利数据库匹配结果展示","y":-10,"style":{"fontSize":"20px"}},"yAxis":[{"title":{"text":"单类专利数量"},"opposite":false},{"title":{"text":"三类专利总数"},"opposite":true}],"credits":{"enabled":false},"exporting":{"enabled":false},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"}},"xAxis":{"categories":[1998,1999,2000,2001,2002,2003,2004,2005,2006,2007]},"series":[{"data":[9810,14618,17453,21297,31463,38699,51638,64098,87442,110797],"type":"column","name":"本文所用数据","yAxis":1},{"data":[9390,12848,15418,19502,28718,35664,48470,60140,83836,106327],"type":"column","name":"寇宗来所用数据(《经济研究》2020-3 )","yAxis":1},{"data":[5489,8187,9249,10275,14077,14839,19771,22633,28729,34249],"type":"line","name":"外观设计专利","yAxis":0},{"data":[770,1290,2097,3411,6793,10214,14883,20872,30395,39442],"type":"line","name":"发明专利","yAxis":0},{"data":[3551,5141,6107,7611,10593,13646,16984,20593,28318,37106],"type":"line","name":"实用新型专利","yAxis":0}],"legend":{"floating":true,"verticalAlign":"top","align":"left","x":70,"y":50},"tooltip":{"shared":true,"crosshairs":true},"caption":{"text":"数据来源：98~07年工业企业数据库 & 中国专利数据库"}},"theme":{"chart":{"backgroundColor":"transparent"},"colors":["#7cb5ec","#434348","#90ed7d","#f7a35c","#8085e9","#f15c80","#e4d354","#2b908f","#f45b5b","#91e8e1"]},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"STSongti-SC-Regular","debug":false},"evals":[],"jsHooks":[]}</script>
+
+
+---
+
+# 2.3、企业生存状况 
+
+
+<div id="htmlwidget-b002467cd127f1a7bd09" style="width:100%;height:500px;" class="highchart html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b002467cd127f1a7bd09">{"x":{"hc_opts":{"chart":{"reflow":true},"title":{"text":"1998~2007年中国新生企业生存状况","style":{"fontFamily":"STSongti-SC-Regular"}},"yAxis":{"title":{"text":"企业数量","style":{"fontFamily":"STSongti-SC-Regular"}},"type":"linear"},"credits":{"enabled":false},"exporting":{"enabled":false},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0,"showInLegend":false},"treemap":{"layoutAlgorithm":"squarified"},"scatter":{"marker":{"symbol":"circle"}},"column":{"datLabels":{"enabled":true}}},"series":[{"group":"group","data":[{"新生当年":"1998","数量":19351,"y":19351,"name":"1998","drilldown":"1998"},{"新生当年":"1999","数量":23698,"y":23698,"name":"1999","drilldown":"1999"},{"新生当年":"2000","数量":33041,"y":33041,"name":"2000","drilldown":"2000"},{"新生当年":"2001","数量":110488,"y":110488,"name":"2001","drilldown":"2001"},{"新生当年":"2002","数量":81860,"y":81860,"name":"2002","drilldown":"2002"},{"新生当年":"2003","数量":102071,"y":102071,"name":"2003","drilldown":"2003"},{"新生当年":"2004","数量":331407,"y":331407,"name":"2004","drilldown":"2004"},{"新生当年":"2005","数量":93186,"y":93186,"name":"2005","drilldown":"2005"},{"新生当年":"2006","数量":91363,"y":91363,"name":"2006","drilldown":"2006"},{"新生当年":"2007","数量":55751,"y":55751,"name":"2007","drilldown":"2007"}],"type":"column","name":"企业数量","colorByPoint":true,"style":{"fontFamily":"STSongti-SC-Regular"}}],"xAxis":{"type":"category","title":{"text":"","style":{"fontFamily":"STSongti-SC-Regular"}}},"drilldown":{"allowPointDrilldown":true,"series":[{"新生当年":"1998","data":[{"记录当年":1998,"数量":5392,"name":1998,"y":5392},{"记录当年":1999,"数量":3100,"name":1999,"y":3100},{"记录当年":2000,"数量":3013,"name":2000,"y":3013},{"记录当年":2001,"数量":1897,"name":2001,"y":1897},{"记录当年":2002,"数量":1617,"name":2002,"y":1617},{"记录当年":2003,"数量":1252,"name":2003,"y":1252},{"记录当年":2004,"数量":840,"name":2004,"y":840},{"记录当年":2005,"数量":814,"name":2005,"y":814},{"记录当年":2006,"数量":737,"name":2006,"y":737},{"记录当年":2007,"数量":689,"name":2007,"y":689}],"id":"1998","type":"column"},{"新生当年":"1999","data":[{"记录当年":1998,"数量":0,"name":1998,"y":0},{"记录当年":1999,"数量":5938,"name":1999,"y":5938},{"记录当年":2000,"数量":4521,"name":2000,"y":4521},{"记录当年":2001,"数量":2965,"name":2001,"y":2965},{"记录当年":2002,"数量":2556,"name":2002,"y":2556},{"记录当年":2003,"数量":2106,"name":2003,"y":2106},{"记录当年":2004,"数量":1552,"name":2004,"y":1552},{"记录当年":2005,"数量":1457,"name":2005,"y":1457},{"记录当年":2006,"数量":1334,"name":2006,"y":1334},{"记录当年":2007,"数量":1269,"name":2007,"y":1269}],"id":"1999","type":"column"},{"新生当年":"2000","data":[{"记录当年":1998,"数量":0,"name":1998,"y":0},{"记录当年":1999,"数量":0,"name":1999,"y":0},{"记录当年":2000,"数量":12866,"name":2000,"y":12866},{"记录当年":2001,"数量":777,"name":2001,"y":777},{"记录当年":2002,"数量":6834,"name":2002,"y":6834},{"记录当年":2003,"数量":582,"name":2003,"y":582},{"记录当年":2004,"数量":4307,"name":2004,"y":4307},{"记录当年":2005,"数量":404,"name":2005,"y":404},{"记录当年":2006,"数量":3756,"name":2006,"y":3756},{"记录当年":2007,"数量":3515,"name":2007,"y":3515}],"id":"2000","type":"column"},{"新生当年":"2001","data":[{"记录当年":1998,"数量":0,"name":1998,"y":0},{"记录当年":1999,"数量":0,"name":1999,"y":0},{"记录当年":2000,"数量":0,"name":2000,"y":0},{"记录当年":2001,"数量":25838,"name":2001,"y":25838},{"记录当年":2002,"数量":21398,"name":2002,"y":21398},{"记录当年":2003,"数量":17683,"name":2003,"y":17683},{"记录当年":2004,"数量":12411,"name":2004,"y":12411},{"记录当年":2005,"数量":11793,"name":2005,"y":11793},{"记录当年":2006,"数量":11035,"name":2006,"y":11035},{"记录当年":2007,"数量":10330,"name":2007,"y":10330}],"id":"2001","type":"column"},{"新生当年":"2002","data":[{"记录当年":1998,"数量":0,"name":1998,"y":0},{"记录当年":1999,"数量":0,"name":1999,"y":0},{"记录当年":2000,"数量":0,"name":2000,"y":0},{"记录当年":2001,"数量":0,"name":2001,"y":0},{"记录当年":2002,"数量":22440,"name":2002,"y":22440},{"记录当年":2003,"数量":12858,"name":2003,"y":12858},{"记录当年":2004,"数量":12705,"name":2004,"y":12705},{"记录当年":2005,"数量":12013,"name":2005,"y":12013},{"记录当年":2006,"数量":11240,"name":2006,"y":11240},{"记录当年":2007,"数量":10604,"name":2007,"y":10604}],"id":"2002","type":"column"},{"新生当年":"2003","data":[{"记录当年":1998,"数量":0,"name":1998,"y":0},{"记录当年":1999,"数量":0,"name":1999,"y":0},{"记录当年":2000,"数量":0,"name":2000,"y":0},{"记录当年":2001,"数量":0,"name":2001,"y":0},{"记录当年":2002,"数量":0,"name":2002,"y":0},{"记录当年":2003,"数量":21755,"name":2003,"y":21755},{"记录当年":2004,"数量":20677,"name":2004,"y":20677},{"记录当年":2005,"数量":21223,"name":2005,"y":21223},{"记录当年":2006,"数量":19880,"name":2006,"y":19880},{"记录当年":2007,"数量":18536,"name":2007,"y":18536}],"id":"2003","type":"column"},{"新生当年":"2004","data":[{"记录当年":1998,"数量":0,"name":1998,"y":0},{"记录当年":1999,"数量":0,"name":1999,"y":0},{"记录当年":2000,"数量":0,"name":2000,"y":0},{"记录当年":2001,"数量":0,"name":2001,"y":0},{"记录当年":2002,"数量":0,"name":2002,"y":0},{"记录当年":2003,"数量":0,"name":2003,"y":0},{"记录当年":2004,"数量":105720,"name":2004,"y":105720},{"记录当年":2005,"数量":80292,"name":2005,"y":80292},{"记录当年":2006,"数量":74914,"name":2006,"y":74914},{"记录当年":2007,"数量":70481,"name":2007,"y":70481}],"id":"2004","type":"column"},{"新生当年":"2005","data":[{"记录当年":1998,"数量":0,"name":1998,"y":0},{"记录当年":1999,"数量":0,"name":1999,"y":0},{"记录当年":2000,"数量":0,"name":2000,"y":0},{"记录当年":2001,"数量":0,"name":2001,"y":0},{"记录当年":2002,"数量":0,"name":2002,"y":0},{"记录当年":2003,"数量":0,"name":2003,"y":0},{"记录当年":2004,"数量":0,"name":2004,"y":0},{"记录当年":2005,"数量":35010,"name":2005,"y":35010},{"记录当年":2006,"数量":30333,"name":2006,"y":30333},{"记录当年":2007,"数量":27843,"name":2007,"y":27843}],"id":"2005","type":"column"},{"新生当年":"2006","data":[{"记录当年":1998,"数量":0,"name":1998,"y":0},{"记录当年":1999,"数量":0,"name":1999,"y":0},{"记录当年":2000,"数量":0,"name":2000,"y":0},{"记录当年":2001,"数量":0,"name":2001,"y":0},{"记录当年":2002,"数量":0,"name":2002,"y":0},{"记录当年":2003,"数量":0,"name":2003,"y":0},{"记录当年":2004,"数量":0,"name":2004,"y":0},{"记录当年":2005,"数量":0,"name":2005,"y":0},{"记录当年":2006,"数量":47783,"name":2006,"y":47783},{"记录当年":2007,"数量":43580,"name":2007,"y":43580}],"id":"2006","type":"column"},{"新生当年":"2007","data":[{"记录当年":1998,"数量":0,"name":1998,"y":0},{"记录当年":1999,"数量":0,"name":1999,"y":0},{"记录当年":2000,"数量":0,"name":2000,"y":0},{"记录当年":2001,"数量":0,"name":2001,"y":0},{"记录当年":2002,"数量":0,"name":2002,"y":0},{"记录当年":2003,"数量":0,"name":2003,"y":0},{"记录当年":2004,"数量":0,"name":2004,"y":0},{"记录当年":2005,"数量":0,"name":2005,"y":0},{"记录当年":2006,"数量":0,"name":2006,"y":0},{"记录当年":2007,"数量":55751,"name":2007,"y":55751}],"id":"2007","type":"column"}],"colorByPoint":true,"drillUpButton":{"relativeTo":"spacingBox","postition":{"x":1,"y":0}}},"subtitle":{"text":"按照新生当年进行区分","style":{"fontFamily":"STSongti-SC-Regular"}},"caption":{"text":"数据来源：作者整理","style":{"fontFamily":"STSongti-SC-Regular"}}},"theme":{"chart":{"backgroundColor":"transparent"},"colors":["#7cb5ec","#434348","#90ed7d","#f7a35c","#8085e9","#f15c80","#e4d354","#2b908f","#f45b5b","#91e8e1"]},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"STSongti-SC-Regular","debug":false},"evals":[],"jsHooks":[]}</script>
+
+
+
+---
+
+
+
+# 2.4、企业死亡状况
+
+&lt;img src="pic/1.jpg" width="65%" style="display: block; margin: auto;" /&gt;
+
+
+- 对于非国企来说，虽然其定义死亡的条件要弱于国企，但其死亡数量逐年稳定上升。
+
+- 对于国企而言，虽其死亡企业数在00年、02年和06年均有不同程度的下降，但整体上还是属于一个逐年递增的趋势。尤其在07年之后，死亡企业数量出现激增。
+
+
+
+---
+
+# 2.5、KM曲线对比
+
+.pull-left[
+
+&lt;img src="pic/2.jpg" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="pic/3.jpg" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+
+
+.pull-right[
+&lt;img src="pic/4.jpg" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="pic/5.jpg" width="100%" style="display: block; margin: auto;" /&gt;
+]
+---
+# 3、实证分析
+
+
+
+<div id="htmlwidget-3772cafe4923d4928546" style="width:100%;height:500px;" class="highchart html-widget"></div>
+<script type="application/json" data-for="htmlwidget-3772cafe4923d4928546">{"x":{"hc_opts":{"chart":{"reflow":true,"type":"timeline","style":{"fontFamily":"STSongti-SC-Regular"}},"title":{"text":null},"yAxis":{"title":{"text":null},"visible":false},"credits":{"enabled":false},"exporting":{"enabled":false},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"}},"xAxis":{"visible":false},"colors":["#4185F3","#427CDD","#406AB2","#3E5A8E","#3B4A68"],"series":[{"data":[{"name":"3.1、模型设定","description":"较之于 Cox 模型，Clog-log 模型的优势；<br>Clog-log 模型的理论推导。"},{"name":"3.2、变量说明","description":"在控制行业和时间固定效应的情况下，从三个角度来选取模型中的解释变量。"},{"name":"3.3、基准回归结果分析","description":"较之于无创新企业，创新企业的生存率更高；<br>在三类不同的创新行为中，外观设计的创新行为对企业生存率的影响在统计上并不显著。"},{"name":"3.4、近一步分析","description":"发明创新行为对企业生存率的影响近似于线性关系，而其他两种则表现为非线性关系。"},{"name":"3.5、内生性检验","description":"分别选取滞后一期的企业创新数据与所在行业除去该企业创新行为平均数作为工具变量进行内生性检验。<br>结果发现无论是哪一种工具变量，系数的显著性和符号和基准回归结果均相当近似。<br>因此，认为本文模型的内生性程度在可接受范围内，估计结果具有稳健性。"}]}]},"theme":{"chart":{"backgroundColor":"transparent"},"colors":["#7cb5ec","#434348","#90ed7d","#f7a35c","#8085e9","#f15c80","#e4d354","#2b908f","#f45b5b","#91e8e1"]},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":"STSongti-SC-Regular","debug":false},"evals":[],"jsHooks":[]}</script>
+
+---
+
+
+# 3.1、模型设定
+
+通过一系列的推导，    `\(Clog-log\)`  模型的最终估计形式可以写成：
+
+`\begin{equation}
+\begin{array}{r}
+Cloglog[Pr(death_{it}=1)]=\beta_{0}+ \alpha*Innovation + \beta_{1}*Firmlevel_{it}+\beta_{2}*Sectorlevel_{it}+ \\
+YEAR+REGION+\gamma_{t}+\varepsilon_{it}
+\end{array}`
+\end{equation}`
+
+
+`\(\beta_0\)`、    `\(\beta_1\)` 、    `\(\beta_2\)` 分别表示；    `\(Firmlevel\)` 和    `\(Sectorlevel\)` 分别表示企业层面和行业层面的一些控制变量；    `\(YEAR\)`  和    `\(REGION\)`  分别表示年份和地区固定效应；    `\(\gamma_t\)`  表示时变的基准风险率；   `\(\varepsilon_{it}\)` 表示误差项，该项捕捉了未观测的个体异质性。其中，    `\(\alpha\)`  为重点关注系数。
+
+
+---
+# 3.2、变量说明
+
+<div id="htmlwidget-89e42f2b2195f0a48311" style="width:90%;height:20px;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-89e42f2b2195f0a48311">{"x":{"filter":"top","filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","data":[["&lt;span style='font-size:15px'&gt;创新行为&lt;/span&gt;","&lt;span style='font-size:15px'&gt;创新行为&lt;/span&gt;","&lt;span style='font-size:15px'&gt;创新行为&lt;/span&gt;","&lt;span style='font-size:15px'&gt;创新行为&lt;/span&gt;","&lt;span style='font-size:15px'&gt;企业层面&lt;/span&gt;","&lt;span style='font-size:15px'&gt;企业层面&lt;/span&gt;","&lt;span style='font-size:15px'&gt;企业层面&lt;/span&gt;","&lt;span style='font-size:15px'&gt;企业层面&lt;/span&gt;","&lt;span style='font-size:15px'&gt;企业层面&lt;/span&gt;","&lt;span style='font-size:15px'&gt;行业层面&lt;/span&gt;","&lt;span style='font-size:15px'&gt;行业层面&lt;/span&gt;","&lt;span style='font-size:15px'&gt;行业层面&lt;/span&gt;"],["&lt;span style='font-size:15px'&gt;inn&lt;/span&gt;","&lt;span style='font-size:15px'&gt;i&lt;/span&gt;","&lt;span style='font-size:15px'&gt;u&lt;/span&gt;","&lt;span style='font-size:15px'&gt;d&lt;/span&gt;","&lt;span style='font-size:15px'&gt;control&lt;/span&gt;","&lt;span style='font-size:15px'&gt;constraint&lt;/span&gt;","&lt;span style='font-size:15px'&gt;profit&lt;/span&gt;","&lt;span style='font-size:15px'&gt;size&lt;/span&gt;","&lt;span style='font-size:15px'&gt;age&lt;/span&gt;","&lt;span style='font-size:15px'&gt;competition_ratio&lt;/span&gt;","&lt;span style='font-size:15px'&gt;inn_ratio&lt;/span&gt;","&lt;span style='font-size:15px'&gt;capital_ratio&lt;/span&gt;"],["&lt;span style='font-size:15px'&gt;0-1变量，衡量企业有无创新&lt;/span&gt;","&lt;span style='font-size:15px'&gt;连续变量，衡量企业有无发明的创新&lt;/span&gt;","&lt;span style='font-size:15px'&gt;连续变量，衡量企业有无实用新型的创新&lt;/span&gt;","&lt;span style='font-size:15px'&gt;连续变量，衡量企业有无实用外观设计的创新&lt;/span&gt;","&lt;span style='font-size:15px'&gt;依据企业控股情况分为三类：国有控股企业、港澳台外资控股企业、其他控股企业&lt;/span&gt;","&lt;span style='font-size:15px'&gt;使用流动资产减去流动负债的差值与总资产的比值来衡量&lt;/span&gt;","&lt;span style='font-size:15px'&gt;使用税前利润总额与资产总额的比值来衡量&lt;/span&gt;","&lt;span style='font-size:15px'&gt;使用全部从业人员年平均人数的对数值进行衡量，同时引入平方项&lt;/span&gt;","&lt;span style='font-size:15px'&gt;从企业加入数据库当年减去企业成立年来衡量，同时引入平方项&lt;/span&gt;","&lt;span style='font-size:15px'&gt;使用该年该行业新注册的公司数量与该年初已有公司总数量的比值衡量&lt;/span&gt;","&lt;span style='font-size:15px'&gt;任意一种创新行为不为0的企业数除以该行业新生企业总数的比来衡量&lt;/span&gt;","&lt;span style='font-size:15px'&gt;使用该行业所有企业人均资本比值的均值来衡量&lt;/span&gt;"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>类别<\/th>\n      <th>名称<\/th>\n      <th>说明<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"autoWidth":true,"pageLength":4,"initComplete":"function(settings, json) {\n$(this.api().table().container()).css({'font-family': 'SourceHanSerifSC-Medium'});\n}","order":[],"orderClasses":false,"orderCellsTop":true,"lengthMenu":[4,10,25,50,100]}},"evals":["options.initComplete"],"jsHooks":[]}</script>
+
+
+---
+
+# 3.3、基准回归结果分析
+
+<div id="htmlwidget-fa22c1a4b3a1136374d5" style="width:90%;height:20px;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-fa22c1a4b3a1136374d5">{"x":{"filter":"top","filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","data":[["&lt;span style='font-size:15px'&gt;inn dummy&lt;/span&gt;","&lt;span style='font-size:15px'&gt;logi&lt;/span&gt;","&lt;span style='font-size:15px'&gt;logd&lt;/span&gt;","&lt;span style='font-size:15px'&gt;logu&lt;/span&gt;","&lt;span style='font-size:15px'&gt;constraint&lt;/span&gt;","&lt;span style='font-size:15px'&gt;profit&lt;/span&gt;","&lt;span style='font-size:15px'&gt;size&lt;/span&gt;","&lt;span style='font-size:15px'&gt;size2&lt;/span&gt;","&lt;span style='font-size:15px'&gt;age&lt;/span&gt;","&lt;span style='font-size:15px'&gt;age2&lt;/span&gt;","&lt;span style='font-size:15px'&gt;competition&lt;/span&gt;","&lt;span style='font-size:15px'&gt;inn_ratio&lt;/span&gt;","&lt;span style='font-size:15px'&gt;capital&lt;/span&gt;","&lt;span style='font-size:15px'&gt;常数项&lt;/span&gt;"],["&lt;span style='font-size:15px'&gt;-0.329***&lt;/span&gt;","&lt;span style='font-size:15px'&gt; &lt;/span&gt;","&lt;span style='font-size:15px'&gt; &lt;/span&gt;","&lt;span style='font-size:15px'&gt; &lt;/span&gt;","&lt;span style='font-size:15px'&gt;-0.006*&lt;/span&gt;","&lt;span style='font-size:15px'&gt;-0.035***&lt;/span&gt;","&lt;span style='font-size:15px'&gt;-0.655***&lt;/span&gt;","&lt;span style='font-size:15px'&gt;0.044***&lt;/span&gt;","&lt;span style='font-size:15px'&gt;-0.079***&lt;/span&gt;","&lt;span style='font-size:15px'&gt;0.016***&lt;/span&gt;","&lt;span style='font-size:15px'&gt;1.229&lt;/span&gt;","&lt;span style='font-size:15px'&gt;0.257***&lt;/span&gt;","&lt;span style='font-size:15px'&gt;0.520***&lt;/span&gt;","&lt;span style='font-size:15px'&gt;-2.949***&lt;/span&gt;"],["&lt;span style='font-size:15px'&gt; &lt;/span&gt;","&lt;span style='font-size:15px'&gt;-0.226***&lt;/span&gt;","&lt;span style='font-size:15px'&gt; &lt;/span&gt;","&lt;span style='font-size:15px'&gt; &lt;/span&gt;","&lt;span style='font-size:15px'&gt;-0.006*&lt;/span&gt;","&lt;span style='font-size:15px'&gt;-0.035***&lt;/span&gt;","&lt;span style='font-size:15px'&gt;-0.645***&lt;/span&gt;","&lt;span style='font-size:15px'&gt;0.043***&lt;/span&gt;","&lt;span style='font-size:15px'&gt;-0.080***&lt;/span&gt;","&lt;span style='font-size:15px'&gt;0.016***&lt;/span&gt;","&lt;span style='font-size:15px'&gt;-0.217&lt;/span&gt;","&lt;span style='font-size:15px'&gt;0.209***&lt;/span&gt;","&lt;span style='font-size:15px'&gt;0.453***&lt;/span&gt;","&lt;span style='font-size:15px'&gt;-2.994***&lt;/span&gt;"],["&lt;span style='font-size:15px'&gt; &lt;/span&gt;","&lt;span style='font-size:15px'&gt; &lt;/span&gt;","&lt;span style='font-size:15px'&gt;-0.018&lt;/span&gt;","&lt;span style='font-size:15px'&gt; &lt;/span&gt;","&lt;span style='font-size:15px'&gt;-0.006*&lt;/span&gt;","&lt;span style='font-size:15px'&gt;-0.035***&lt;/span&gt;","&lt;span style='font-size:15px'&gt;-0.642***&lt;/span&gt;","&lt;span style='font-size:15px'&gt;0.042***&lt;/span&gt;","&lt;span style='font-size:15px'&gt;-0.080***&lt;/span&gt;","&lt;span style='font-size:15px'&gt;0.016***&lt;/span&gt;","&lt;span style='font-size:15px'&gt;8.847**&lt;/span&gt;","&lt;span style='font-size:15px'&gt;0.309***&lt;/span&gt;","&lt;span style='font-size:15px'&gt;0.458***&lt;/span&gt;","&lt;span style='font-size:15px'&gt;-3.002***&lt;/span&gt;"],["&lt;span style='font-size:15px'&gt; &lt;/span&gt;","&lt;span style='font-size:15px'&gt; &lt;/span&gt;","&lt;span style='font-size:15px'&gt; &lt;/span&gt;","&lt;span style='font-size:15px'&gt;-0.118***&lt;/span&gt;","&lt;span style='font-size:15px'&gt;-0.006*&lt;/span&gt;","&lt;span style='font-size:15px'&gt;-0.035***&lt;/span&gt;","&lt;span style='font-size:15px'&gt;-0.652***&lt;/span&gt;","&lt;span style='font-size:15px'&gt;0.044***&lt;/span&gt;","&lt;span style='font-size:15px'&gt;-0.080***&lt;/span&gt;","&lt;span style='font-size:15px'&gt;0.016***&lt;/span&gt;","&lt;span style='font-size:15px'&gt;-10.947&lt;/span&gt;","&lt;span style='font-size:15px'&gt;0.010&lt;/span&gt;","&lt;span style='font-size:15px'&gt;0.231***&lt;/span&gt;","&lt;span style='font-size:15px'&gt;-2.972***&lt;/span&gt;"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>(1)<\/th>\n      <th>(2)<\/th>\n      <th>(3)<\/th>\n      <th>(4)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"autoWidth":true,"pageLength":7,"initComplete":"function(settings, json) {\n$(this.api().table().container()).css({'font-family': 'SourceHanSerifSC-Medium'});\n}","order":[],"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}],"orderCellsTop":true,"lengthMenu":[7,10,25,50,100]}},"evals":["options.initComplete"],"jsHooks":[]}</script>
+
+
+
+---
+
+class:center
+
+# 感谢您的聆听！
+
+
+
+&lt;img src="pic/logo.jpg" width="65%" style="display: block; margin: auto;" /&gt;
+
+
+&lt;br&gt;
+&lt;span style='color:steelblue'&gt;汇报人：张沐&lt;/span&gt;
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "4:3",
+"navigation": {
+"click": false,
+"scroll": false
+}
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+(function(time) {
+  var d2 = function(number) {
+    return ('0' + number).slice(-2); // left-pad 0 to minutes/seconds
+  },
+
+  time_format = function(total) {
+    var secs = Math.abs(total) / 1000;
+    var h = Math.floor(secs / 3600);
+    var m = Math.floor(secs % 3600 / 60);
+    var s = Math.round(secs % 60);
+    var res = d2(m) + ':' + d2(s);
+    if (h > 0) res = h + ':' + res;
+    return res;  // [hh:]mm:ss
+  },
+
+  slide_number_div = function(i) {
+    return document.getElementsByClassName('remark-slide-number').item(i);
+  },
+
+  current_page_number = function(i) {
+    return slide_number_div(i).firstChild.textContent;  // text "i / N"
+  };
+
+  var timer = document.createElement('span'); timer.id = 'slide-time-left';
+  var time_left = time, k = slideshow.getCurrentSlideIndex(),
+      last_page_number = current_page_number(k);
+
+  setInterval(function() {
+    time_left = time_left - 1000;
+    timer.innerHTML = ' ' + time_format(time_left);
+    if (time_left < 0) timer.style.color = 'red';
+  }, 1000);
+
+  slide_number_div(k).appendChild(timer);
+
+  slideshow.on('showSlide', function(slide) {
+    var i = slide.getSlideIndex(), n = current_page_number(i);
+    // reset timer when a new slide is shown and the page number is changed
+    if (last_page_number !== n) {
+      time_left = time; last_page_number = n;
+      timer.innerHTML = ' ' + time_format(time); timer.style.color = null;
+    }
+    slide_number_div(i).appendChild(timer);
+  });
+})(60000);
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
