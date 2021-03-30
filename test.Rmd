@@ -220,7 +220,7 @@ highchart() %>% # 使用JavaScript方式
 
 ---
 
-# 2.3、企业生存状况 
+# 2.3、企业生存现状 
 
 
 ```{r echo=FALSE}
